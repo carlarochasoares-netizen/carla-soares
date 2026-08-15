@@ -1,0 +1,42 @@
+<!-- HOME — CARLA SOARES
+Cole todo este bloco em UM widget HTML do Elementor gratuito.
+Na prévia local, as imagens usam a pasta HOME-assets. No WordPress, substitua esses dois caminhos pelas URLs da Biblioteca de Mídia. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400&family=Montserrat:wght@700;800&display=swap');
+#carla-home{--bg:#faf6f4;--c1:#f8e6da;--c2:#d6d2c3;--c3:#eed8d4;--c4:#cdd0d8;--ink:#3f3a38;--accent:#755247;width:100%;margin:0;background:var(--bg);color:var(--ink);font-family:'Lato',Arial,sans-serif;overflow:hidden}#carla-home *{box-sizing:border-box}#carla-home a{text-decoration:none;color:inherit}
+#carla-home .crs-hero{width:100%;height:400px;position:relative;overflow:hidden}#carla-home .crs-hero>img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}#carla-home .crs-shade{position:absolute;inset:0;background:rgba(20,18,17,.50)}#carla-home .crs-logo{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;text-shadow:0 2px 18px rgba(0,0,0,.25);padding:30px}#carla-home .crs-logo-name{font-family:'Montserrat',Arial,sans-serif;text-transform:uppercase;letter-spacing:.19em;line-height:1;font-size:clamp(42px,5.5vw,76px);font-weight:800;margin-left:.19em}#carla-home .crs-logo-line{width:100px;height:2px;background:rgba(255,255,255,.85);margin:20px 0 17px}#carla-home .crs-logo small{font-style:italic;font-size:13px;letter-spacing:.1em}#carla-home .crs-logo small b{font-style:normal;margin:0 7px}#carla-home .crs-menu{height:72px;padding:0 50px;background:#f1e3dc;display:grid;grid-template-columns:repeat(5,1fr);align-items:stretch;border-bottom:1px solid rgba(93,72,63,.12)}#carla-home .crs-menu a{display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 18px;font-family:'Montserrat',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.03em;border-right:1px solid rgba(93,72,63,.13);transition:background .2s,color .2s}#carla-home .crs-menu a:first-child{border-left:1px solid rgba(93,72,63,.13)}#carla-home .crs-menu a:hover,#carla-home .crs-menu a:focus{background:#745a50;color:#fff;outline:none}
+#carla-home .crs-intro{display:grid;grid-template-columns:minmax(0,39%) minmax(0,61%);padding:34px 50px 22px;gap:20px}#carla-home .crs-profile{background:var(--c1);padding:34px;display:flex;align-items:center;justify-content:center;min-height:535px}#carla-home .crs-photo{width:min(100%,390px);height:455px;position:relative;padding:11px;border:1px solid #a88476}#carla-home .crs-photo:before{content:"";position:absolute;inset:6px;border:1px solid rgba(117,82,71,.45);pointer-events:none}#carla-home .crs-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 64%;display:block}#carla-home h1,#carla-home h2,#carla-home .crs-link strong{font-family:'Montserrat',Arial,sans-serif;font-weight:800}#carla-home .crs-copy{background:var(--c2);padding:52px clamp(42px,5vw,78px);display:flex;flex-direction:column;justify-content:center;min-height:535px}#carla-home .crs-label{font-style:italic;font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:#6b655d;margin:0 0 12px}#carla-home .crs-copy h1{font-size:clamp(34px,3.8vw,54px);line-height:1.05;margin:0;color:#47453f}#carla-home .crs-rule{width:72px;height:4px;background:#767165;margin:20px 0 26px}#carla-home .crs-text{font-size:17px;line-height:1.7;margin:0 0 14px;max-width:850px;color:#514f49}
+#carla-home .crs-links{padding:12px 50px 34px;display:grid;grid-template-columns:repeat(3,minmax(210px,270px));justify-content:center;gap:18px}#carla-home .crs-link{min-height:82px;padding:16px 22px;display:flex;align-items:center;justify-content:flex-start;gap:15px;transition:transform .25s ease,box-shadow .25s ease}#carla-home .crs-link:hover,#carla-home .crs-link:focus{transform:translateY(-4px);box-shadow:0 12px 25px rgba(75,62,56,.12);outline:none}#carla-home .crs-cv{background:var(--c3)}#carla-home .crs-linkedin{background:var(--c4)}#carla-home .crs-contact{background:var(--c1)}#carla-home .crs-icon{width:40px;height:40px;border:2px solid #72574f;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;color:#72574f;font-family:'Montserrat',Arial,sans-serif;font-size:21px;font-weight:800}#carla-home .crs-linkedin .crs-icon{border-color:#4d5668;color:#4d5668;font-size:15px}#carla-home .crs-link small{display:block;font-style:italic;font-size:11px;margin-bottom:3px;color:#6c6460}#carla-home .crs-link strong{font-size:16px}
+@media(max-width:1100px){#carla-home .crs-intro{grid-template-columns:42% 58%}#carla-home .crs-copy{padding:50px 40px}#carla-home .crs-text{font-size:16px}}
+@media(max-width:800px){#carla-home .crs-hero{height:360px}#carla-home .crs-menu{height:auto;padding:0 24px;grid-template-columns:1fr}#carla-home .crs-menu a{min-height:48px;border-right:0;border-bottom:1px solid rgba(93,72,63,.13)}#carla-home .crs-menu a:first-child{border-left:0}#carla-home .crs-intro{grid-template-columns:1fr;padding:26px 35px 18px;gap:18px}#carla-home .crs-profile{min-height:auto;padding:30px}#carla-home .crs-copy{min-height:auto}#carla-home .crs-links{padding:0 35px 30px;grid-template-columns:repeat(3,minmax(0,1fr))}#carla-home .crs-link{justify-content:center}#carla-home .crs-link small{display:none}}
+@media(max-width:560px){#carla-home .crs-hero{height:320px}#carla-home .crs-logo-name{font-size:36px;letter-spacing:.1em;margin-left:.1em}#carla-home .crs-logo small{font-size:10px;line-height:1.5}#carla-home .crs-logo small b{display:block;height:2px;color:transparent}#carla-home .crs-intro{padding:20px 22px 14px}#carla-home .crs-profile{padding:24px}#carla-home .crs-photo{height:390px;width:100%}#carla-home .crs-copy{padding:38px 26px}#carla-home .crs-text{font-size:15px;line-height:1.7}#carla-home .crs-links{padding:0 22px 22px;grid-template-columns:1fr}#carla-home .crs-link{justify-content:flex-start}#carla-home .crs-link small{display:block}}
+</style>
+
+<div id="carla-home">
+  <section class="crs-hero" aria-label="Carla Soares portfolio introduction">
+    <img src="hero-interior.jpg" alt="Residential interior designed by Carla Soares">
+    <div class="crs-shade"></div>
+    <div class="crs-logo"><span class="crs-logo-name">Carla Soares</span><span class="crs-logo-line"></span><small>Construction Project Management Student <b>|</b> Architectural Design Professional</small></div>
+  </section>
+
+  <nav class="crs-menu" aria-label="Main portfolio navigation">
+    <a href="#about-me">About me</a><a href="#career-development">Career Development</a><a href="#project-portfolio">Project Portfolio</a><a href="#reflective-learning">Reflective Learning</a><a href="#contact">Contact</a>
+  </nav>
+
+  <section class="crs-intro" id="about-me">
+    <div class="crs-profile">
+      <div class="crs-photo"><img src="carla-professional.jpeg" alt="Carla Rocha Soares"></div>
+    </div>
+    <div class="crs-copy">
+      <p class="crs-label">Welcome to my ePortfolio</p><h1>Carla Rocha Soares</h1><div class="crs-rule"></div>
+      <p class="crs-text">I am an Architectural Design Professional currently completing a Master of Management (Construction Project Management) at ICL Graduate Business School in Auckland. With over twelve years of experience in residential design, technical documentation and project coordination, I am transitioning into construction project management.</p>
+      <p class="crs-text">In the short term, my goal is to gain practical experience within New Zealand's residential construction industry. In the long term, I aim to combine my architectural background and management expertise to coordinate and eventually lead sustainable residential construction and redevelopment projects.</p>
+    </div>
+  </section>
+
+  <nav class="crs-links" id="contact" aria-label="Portfolio quick links">
+    <a class="crs-link crs-cv" href="#" aria-label="CV link coming soon"><span class="crs-icon" aria-hidden="true">↓</span><span><small>View my experience</small><strong>Download CV</strong></span></a>
+    <a class="crs-link crs-linkedin" href="#" aria-label="LinkedIn link coming soon"><span class="crs-icon" aria-hidden="true">in</span><span><small>Let's connect</small><strong>LinkedIn</strong></span></a>
+    <a class="crs-link crs-contact" href="#" aria-label="Contact link coming soon"><span class="crs-icon" aria-hidden="true">@</span><span><small>Start a conversation</small><strong>Contact</strong></span></a>
+  </nav>
+</div>
